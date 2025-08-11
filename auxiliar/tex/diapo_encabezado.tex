@@ -1,0 +1,153 @@
+
+\usepackage{ragged2e} %\justifying
+\usepackage{paracol}
+\usepackage[utf8]{inputenc} %Para acentos en UTF8 (Prueba: á é í ó ú Á É Í Ó Ú ñ Ñ)
+\usepackage{url}
+%\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float} % para que los gr\'aficos se queden en su lugar con [H]
+\usepackage[fleqn]{mathtools} % \coloneqq, flalign
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{soul,color} %\st{Hellow world}
+\usepackage{xcolor} %\st{Hellow world}
+\usepackage[fleqn]{amsmath} %para escribir funci\'on partida
+\usepackage{blkarray}
+\usepackage{hyperref} % para inlcuir links dentro del texto
+\usepackage{tabu} 
+\usepackage{comment}
+\usepackage{amsfonts} % mathbb{N} -> conjunto de los n\'umeros naturales  
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem} %  shortlabels option to have compatibility with the enumerate-like scheme for label
+\usepackage{framed}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{transparent} % \transparent{1.0}
+\usepackage{bm} 
+\usepackage[makeroom]{cancel} % \cancel{} \bcancel{} etc
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm} %128mm  mitad: 64 
+\setlength{\TPVertModule}{1mm}	%96mm  mitad 48
+
+\newif\ifen
+\newif\ifes
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\es}[1]{\ifes#1\fi}
+\estrue
+
+\setlist[itemize,1]{label=$\bullet$}
+
+\usepackage{todonotes}
+\setbeameroption{show notes}
+\usepackage{rotating}
+\usepackage{transparent}
+
+
+\newcommand{\E}{\en{S}\es{E}}
+\newcommand{\A}{\en{E}\es{A}}
+\newcommand{\Ee}{\en{s}\es{e}}
+\newcommand{\Aa}{\en{e}\es{a}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor={red!50!black},
+    citecolor={blue!35!black},
+    urlcolor={blue!35!black}
+}
+
+\newcommand\hfrac[2]{\genfrac{}{}{0pt}{}{#1}{#2}} %\frac{}{} sin la linea del medio
+
+\newcommand{\indep}{\perp \!\!\! \perp}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\vm}[1]{\mathbf{#1}}
+
+\newtheorem{midef}{Definition}
+\newtheorem{miteo}{Theorem}
+\newtheorem{mipropo}{Proposition}
+
+\usefonttheme[onlymath]{serif}
+
+
+\usepackage{tikz} % Para graficar, por ejemplo bayes networks
+%\usetikzlibrary{bayesnet} % Para que ande se necesita copiar el archivo  tikzlibrarybayesnet.code.tex en la misma carpeta
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%
+% Incompatibles con textpos
+%
+%\usepackage{todonotes}
+%\usepackage{tikz} % Para graficar, por ejemplo bayes networks
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage[absolute,overlay]{textpos} %no funciona
+\setlength{\TPHorizModule}{1mm} %128mm  mitad: 64 
+\setlength{\TPVertModule}{1mm}	%96mm  mitad 48
+% 
+% 
+\captionsetup[figure]{labelformat=empty}
+
+% 
+% http://latexcolor.com/
+\definecolor{lightseagreen}{rgb}{0.13, 0.7, 0.6.5}
+\definecolor{greenblue}{rgb}{0.1, 0.55, 0.5}
+\definecolor{redgreen}{rgb}{0.6, 0.4, 0.}
+\definecolor{greenred}{rgb}{0.4, 0.7, 0.}
+\definecolor{redblue}{rgb}{0.4, 0., .4}
+\definecolor{tangelo}{rgb}{0.98, 0.3, 0.0}
+\definecolor{git}{rgb}{0.94, 0.309, 0.2}
+% 
+\setbeamercolor{structure}{fg=greenblue}
+
+
+%http://latexcolor.com/
+\definecolor{azul}{rgb}{0.36, 0.54, 0.66}
+\definecolor{rojo}{rgb}{0.7, 0.2, 0.116}
+\definecolor{rojopiso}{rgb}{0.8, 0.25, 0.17}
+\definecolor{verdeingles}{rgb}{0.12, 0.5, 0.17}
+\definecolor{ubuntu}{rgb}{0.44, 0.16, 0.39}
+\definecolor{debian}{rgb}{0.84, 0.04, 0.33}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+\newenvironment{ejercicio}[1]{
+% \setbeamercolor{block title}{bg=tangelo, fg=white}
+\begin{exampleblock}{#1}
+}{
+\end{exampleblock}
+}
+
+\newenvironment{resumen}[1]{
+\setbeamercolor{block title}{bg=git, fg=white}
+\begin{block}{#1}
+}{
+\end{block}
+}
+
+\newenvironment{comando}{
+\setbeamercolor{block body}{bg=git, fg=white}
+\begin{block}{}
+\begin{center}
+\LARGE
+\begin{texttt}
+}{
+\end{texttt}
+\end{center}
+\end{block}
+}
