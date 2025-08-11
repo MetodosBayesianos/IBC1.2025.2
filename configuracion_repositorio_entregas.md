@@ -64,7 +64,7 @@ Ahora vamos a organizar la estructura de archivos de tu repositorio desde tu com
     git push
     ```
 
-### Estructura Final
+#### Estructura Final
 
 ¡Listo\! Al terminar, la estructura de tu repositorio en tu computadora y en GitHub se verá así:
 
@@ -79,3 +79,26 @@ Ahora vamos a organizar la estructura de archivos de tu repositorio desde tu com
 |
 `-- .gitmodules               <-- (Archivo de configuración del submódulo)
 ```
+
+### Parte 4. Dar acceso de escritura a la persona que evalúa su trabajo.
+
+- Javier Roldan evalúa a Ezequiel Orlando Coggiola.
+- Matias Bacalhau evalúa a Nahuel Matias Benitez.
+- Rocio Belen Rivera evalúa a Alejo Razeto.
+- Ezequiel Orlando Coggiola evalúa a Gianni Bevilacqua.
+- Lucas Efrain Oliaro Vera evalúa a Moerna Miraglia.
+- Gianni Bevilacqua evalúa a Lucas Emanuel Barreiro.
+- Nahuel Matias Benitez evalúa a Bruno Sidelsky.
+- Joan José Espada evalúa a Luca Gaziglia.
+- Lucas Emanuel Barreiro evalúa a Gerardo Enrique Toboso Barrios.
+- Facundo Latini Leiva evalúa a Alejandro Dario Echeverri.
+- Alejo Razeto evalúa a Erika Nahir Gorosito.
+- Gerardo Enrique Toboso Barrios evalúa a Lucio Agustin Lourido Serruto.
+- Bruno Sidelsky evalúa a Ariel Emanuel Bat Mentzel.
+- Moerna Miraglia evalúa a Rocio Belen Rivera.
+- Lucio Agustin Lourido Serruto evalúa a Nicolás Lautaro Cirulli.
+- Alejandro Dario Echeverri evalúa a Matias Bacalhau.
+- Luca Gaziglia evalúa a Lucas Efrain Oliaro Vera.
+- Nicolás Lautaro Cirulli evalúa a Javier Roldan.
+- Ariel Emanuel Bat Mentzel evalúa a Facundo Latini Leiva.
+- Erika Nahir Gorosito evalúa a Joan José Espada.

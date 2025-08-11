@@ -2,6 +2,69 @@
 
 ## Últimas novedades
 
+### 2025-08-11.
+
+Buenas!
+
+Hoy hay varias novedades.
+
+1. **Github**. Subimos al repo una guía para hacer que sus repositorios sean privados, y que tengan como submodulo los materiales de la materia. Ver archivo `configuracion_repositorio_entregas.md`.
+2. **Unidad 1**. Ya están subidas las teóricas, la consigna y el archivo python que funciona como template para la solución de la práctica 1. Ver carpeta `1-modelos/`. Entrega práctica 1: antes del 20 de agosto a las 23:59.
+    - **Grupos**. Para trabajar de forma remota, decidimos armar grupos de 3 personas. Cuando haya dos grupos de 2 personas hacemos un fusión. Los grupos irán cambiando a medida que avance la materia. Las evaluaciones serán individuales y grupales. Creamos una Sala de Google Meet para cada uno de los grupos, para que se puedan reunir.
+        - Grupo 0. Meet: bayesplurinacional.org/link/VideoConferenciaSala0.html
+            17.         Javier Roldan,
+            0.        Matias Bacalhau,
+            16.    Rocio Belen Rivera.
+        - Grupo 1. Meet: bayesplurinacional.org/link/VideoConferenciaSala1.html
+            6.     Ezequiel Orlando Coggiola,
+            19.            Naiara Belen Sosa,
+            14.     Lucas Efrain Oliaro Vera.
+        - Grupo 2. Meet: bayesplurinacional.org/link/VideoConferenciaSala2.html
+            4.       Gianni Bevilacqua,
+            3.    Nahuel Matias Benitez,
+            8.         Joan José Espada.
+        - Grupo 3. Meet: bayesplurinacional.org/link/VideoConferenciaSala3.html
+            1.     Lucas Emanuel Barreiro,
+            11.      Facundo Latini Leiva,
+            15.              Alejo Razeto.
+        - Grupo 4. Meet: bayesplurinacional.org/link/VideoConferenciaSala4.html
+            20.    Gerardo Enrique Toboso Barrios,
+            18.                    Bruno Sidelsky,
+            13.                   Moerna Miraglia.
+        - Grupo 5. Meet: bayesplurinacional.org/link/VideoConferenciaSala5.html
+            12.    Lucio Agustin Lourido Serruto,
+            7.        Alejandro Dario Echeverri,
+            9.                     Luca Gaziglia.
+        - Grupo 6. Meet: bayesplurinacional.org/link/VideoConferenciaSala6.html
+            5.       Nicolás Lautaro Cirulli,
+            2.     Ariel Emanuel Bat Mentzel,
+            10.         Erika Nahir Gorosito.
+
+3. **Evaluación por pares**. Además de la evaluación por parte de los docentes, implementaremos evaluaciones por pares entre estudiantes. La persona que evalúa debe tener acceso de escritura en el repositorio de la persona que está siendo evaluada.
+    - Javier Roldan evalúa a Ezequiel Orlando Coggiola.
+    - Matias Bacalhau evalúa a Nahuel Matias Benitez.
+    - Rocio Belen Rivera evalúa a Alejo Razeto.
+    - Ezequiel Orlando Coggiola evalúa a Gianni Bevilacqua.
+    - Lucas Efrain Oliaro Vera evalúa a Moerna Miraglia.
+    - Gianni Bevilacqua evalúa a Lucas Emanuel Barreiro.
+    - Nahuel Matias Benitez evalúa a Bruno Sidelsky.
+    - Joan José Espada evalúa a Luca Gaziglia.
+    - Lucas Emanuel Barreiro evalúa a Gerardo Enrique Toboso Barrios.
+    - Facundo Latini Leiva evalúa a Alejandro Dario Echeverri.
+    - Alejo Razeto evalúa a Erika Nahir Gorosito.
+    - Gerardo Enrique Toboso Barrios evalúa a Lucio Agustin Lourido Serruto.
+    - Bruno Sidelsky evalúa a Ariel Emanuel Bat Mentzel.
+    - Moerna Miraglia evalúa a Rocio Belen Rivera.
+    - Lucio Agustin Lourido Serruto evalúa a Nicolás Lautaro Cirulli.
+    - Alejandro Dario Echeverri evalúa a Matias Bacalhau.
+    - Luca Gaziglia evalúa a Lucas Efrain Oliaro Vera.
+    - Nicolás Lautaro Cirulli evalúa a Javier Roldan.
+    - Ariel Emanuel Bat Mentzel evalúa a Facundo Latini Leiva.
+    - Erika Nahir Gorosito evalúa a Joan José Espada.
+
+
+Además vengo a informar que, en contra de lo que dije la semana pasada, hoy voy a adherir al paro por su dimensión y por la importancia de las reivindicaciones. Si bien yo no me voy a conectar durante la clase de hoy, entre las 15:30 y las 18:00, durante el paro ustedes tienen que trabajar el doble (como hacen los chinos y japoneses) para que la materia de Inferencia Causal de la UNSAM se la mejor materia de la Argentina. De hecho, no conozco ninguna materia del mundo entero donde vayan a ver los contenidos que se ven en esta materia, como por ejemplo es el error fundamental del enfoque de potential outcomes que ni siquiera Judea Pearl menciona (aunque lo sabe perfectamente). Si bien no voy a conectarme, voy a estar pendiente para responder preguntas por acá.
+
 ### 2025-08-06. Teórica 1, link del fork y discord.
 
 Novedades de la mejor materia del mundo!
