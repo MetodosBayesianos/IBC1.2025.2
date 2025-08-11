@@ -1,0 +1,22 @@
+Orden, Nombre
+0, Matias Bacalhau
+1, Lucas Emanuel Barreiro
+2, Ariel Emanuel Bat Mentzel
+3, Nahuel Matias Benitez
+4, Gianni Bevilacqua
+5, Nicolás Lautaro Cirulli
+6, Ezequiel Orlando Coggiola
+7, Alejandro Dario Echeverri
+8, Joan José Espada
+9, Luca Gaziglia
+10,Erika Nahir Gorosito
+11,Facundo Latini Leiva
+12,Lucio Agustin Lourido Serruto
+13,Moerna Miraglia
+14,Lucas Efrain Oliaro Vera
+15,Alejo Razeto
+16,Rocio Belen Rivera
+17,Javier Roldan
+18,Bruno Sidelsky
+19,Naiara Belen Sosa
+20,Gerardo Enrique Toboso Barrios
