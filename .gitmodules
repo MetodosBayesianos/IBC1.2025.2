@@ -55,3 +55,6 @@
 [submodule "estudiantes/21-juanserrano90"]
 	path = estudiantes/21-juanserrano90
 	url = git@github.com:juanserrano90/InferenciaBayesianaCausal.git
+[submodule "estudiantes/10-EriGorosito"]
+	path = estudiantes/10-EriGorosito
+	url = git@github.com:EriGorosito/IBC1.2025.2.git
