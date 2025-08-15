@@ -1,0 +1,57 @@
+[submodule "estudiantes/00-mbacalhau"]
+	path = estudiantes/00-mbacalhau
+	url = git@github.com:mbacalhau/IBC1.2025.2.git
+[submodule "estudiantes/01-lucasbarreiroe"]
+	path = estudiantes/01-lucasbarreiroe
+	url = git@github.com:lucasbarreiroe/IBC1.2025.2.git
+[submodule "estudiantes/02-ArielBatMentzel"]
+	path = estudiantes/02-ArielBatMentzel
+	url = git@github.com:ArielBatMentzel/IBC.2025.git
+[submodule "estudiantes/03-nmbenitez"]
+	path = estudiantes/03-nmbenitez
+	url = git@github.com:nmbenitez/IBC1.2025.2.git
+[submodule "estudiantes/04-Gianni2025"]
+	path = estudiantes/04-Gianni2025
+	url = git@github.com:Gianni2025/IBC1.2025.2.git
+[submodule "estudiantes/05-nicolascirulli01"]
+	path = estudiantes/05-nicolascirulli01
+	url = git@github.com:nicolascirulli01/IBC1.2025.2.git
+[submodule "estudiantes/06-ezeqcoggiola"]
+	path = estudiantes/06-ezeqcoggiola
+	url = git@github.com:ezeqcoggiola/IBC1.2025.2.git
+[submodule "estudiantes/07-aecheverri"]
+	path = estudiantes/07-aecheverri
+	url = git@github.com:aecheverri/IBC1.2025.2.git
+[submodule "estudiantes/08-JoanEspadaUNSAM"]
+	path = estudiantes/08-JoanEspadaUNSAM
+	url = git@github.com:JoanEspadaUNSAM/IBC1.2025.2.git
+[submodule "estudiantes/09-lucagaziglia"]
+	path = estudiantes/09-lucagaziglia
+	url = git@github.com:lucagaziglia/InferenciaBayesianaCausal.git
+[submodule "estudiantes/11-faculatini"]
+	path = estudiantes/11-faculatini
+	url = git@github.com:faculatini/IBC1.2025.2.git
+[submodule "estudiantes/12-LucioLourido"]
+	path = estudiantes/12-LucioLourido
+	url = git@github.com:LucioLourido/IC2025.2.LouridoLucio.git
+[submodule "estudiantes/13-morenamiraglia"]
+	path = estudiantes/13-morenamiraglia
+	url = git@github.com:morenamiraglia/IBC1.2025.2.git
+[submodule "estudiantes/14-lucas-oliaro"]
+	path = estudiantes/14-lucas-oliaro
+	url = git@github.com:lucas-oliaro/IBC1.2025.2.git
+[submodule "estudiantes/15-AlRazeto"]
+	path = estudiantes/15-AlRazeto
+	url = git@github.com:AlRazeto/IBC1.2025.2.git
+[submodule "estudiantes/16-brunosidel"]
+	path = estudiantes/18-brunosidel/
+	url = git@github.com:brunosidel/IBC1.2025.2.git
+[submodule "estudiantes/16-rriveraro"]
+	path = estudiantes/16-rriveraro
+	url = git@github.com:rriveraro/IBC1.2025.2.git
+[submodule "estudiantes/20-Gerardo1909"]
+	path = estudiantes/20-Gerardo1909
+	url = git@github.com:Gerardo1909/IBC1.2025.2.git
+[submodule "estudiantes/21-juanserrano90"]
+	path = estudiantes/21-juanserrano90
+	url = git@github.com:juanserrano90/InferenciaBayesianaCausal.git
