@@ -2,6 +2,10 @@
 
 ## Últimas novedades
 
+### 2025-08-25
+
+Ya está subida la teórica 2 sum-prodcut al github y al campus. El video falló y no quedó grabado. El domingo a la noche es la segunda entrega de la práctica 1. Lean hasta el capítulo 3 de Model-Based Machine Learning. Las lecturas sugeridas (Sum-prodcut algorithm y TrueSkill) están en el pdf de la teoríca (al principio y al final). Nos vemos el lunes que viene directamente.
+
 ### 2025-08-11.
 
 Buenas!
