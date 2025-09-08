@@ -2,6 +2,14 @@
 
 ## Últimas novedades
 
+### 2025-09-08
+
+Hoy lunes 8 de septiembre vamos a ver cómo eliminar las correlaciones espurias de las predicciones. Ya está subida la teórica de flujo de inferencia. Además vamos a terminar en clase la práctica de estimación de habilidad por pasaje de mensajes.
+
+### 2025-09-01
+
+Hoy 1 de septiembre arrancamos a las 15:05 con una nueva teórica basada en el capítulo 3 del libro de Model-Based Machine Learning y una nueva teórica donde implementamos la versión básica del estimador de habilidad de la industria del video juego. Van a ver en el campus y en github que ya está disponible los materiales de la unidad 3.
+
 ### 2025-08-25
 
 Ya está subida la teórica 2 sum-prodcut al github y al campus. El video falló y no quedó grabado. El domingo a la noche es la segunda entrega de la práctica 1. Lean hasta el capítulo 3 de Model-Based Machine Learning. Las lecturas sugeridas (Sum-prodcut algorithm y TrueSkill) están en el pdf de la teoríca (al principio y al final). Nos vemos el lunes que viene directamente.
