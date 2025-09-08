@@ -5,7 +5,7 @@ sqrt2 = math.sqrt(2); sqrt2pi = math.sqrt(2 * math.pi)
 from scipy.stats import norm
 from scipy.stats import truncnorm
 
-__all__ = ['MU', 'SIGMA', 'Gaussian', 'N01', 'N00', 'Ninf', 'Nms']
+__all__ = ['MU', 'SIGMA', 'Gaussian', 'N01', 'N00', 'Ninf', 'Nms', 'suma']
 
 MU = 0.0
 SIGMA = 6
@@ -113,12 +113,11 @@ class Gaussian(object):
 def suma(Ns):
     res = Gaussian(0,0) # neutro de la suma
     for N in Ns:
-        res += res + N
+        res = res + N
     return(res)
 
 
-
+N00 = Gaussian(0,0) # neutro de la suma
+Ninf = Gaussian(0,inf) # neutro del producto
 N01 = Gaussian(0,1)
-N00 = Gaussian(0,0)
-Ninf = Gaussian(0,inf)
 Nms = Gaussian(MU, SIGMA)
