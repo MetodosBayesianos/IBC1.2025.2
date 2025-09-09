@@ -60,7 +60,7 @@ class Gaussian(object):
         # Devolver la Gaussiana con misma media y desvío
         #_mu = ...
         #_sigma = ...
-        return(Gaussian(_mu, _sigma)
+        return(Gaussian(_mu, _sigma))
     #
     # N >= 0
     def __ge__(self, threshold):
