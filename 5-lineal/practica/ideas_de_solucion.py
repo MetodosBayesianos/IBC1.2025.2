@@ -93,11 +93,12 @@ X_3_1= pd.DataFrame({
     "w_0": [1 for _ in range(M)],    # Origen
     "w_x": x,
     "w_z3": z3,
-    "w_w2": w2,
+    #"w_w2": w2, # Hay que controlar por esta variable, no?
     })
 
 MU_3_1, COV_3_1 = ml.posterior(y,X_3_1)
-MU_3_1, COV_3_1 = ml.posterior(y,X_3_1)
+MU_3_1
+
 
 model_ols_3_1 = OLS(y, X_3_1).fit()
 model_ols_3_1.summary()
