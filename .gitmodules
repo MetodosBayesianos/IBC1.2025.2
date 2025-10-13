@@ -43,8 +43,8 @@
 [submodule "estudiantes/15-AlRazeto"]
 	path = estudiantes/15-AlRazeto
 	url = git@github.com:AlRazeto/IBC1.2025.2.git
-[submodule "estudiantes/16-brunosidel"]
-	path = estudiantes/18-brunosidel/
+[submodule "estudiantes/18-brunosidel"]
+	path = estudiantes/18-brunosidel
 	url = git@github.com:brunosidel/IBC1.2025.2.git
 [submodule "estudiantes/16-rriveraro"]
 	path = estudiantes/16-rriveraro
@@ -61,3 +61,6 @@
 [submodule "estudiantes/22-leancitop"]
 	path = estudiantes/22-leancitop
 	url = git@github.com:leancitop/IBC1.2025.2.git
+[submodule "8-DoWhy/Causal-Inference-and-Discovery-in-Python"]
+	path = 8-DoWhy/Causal-Inference-and-Discovery-in-Python
+	url = https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python
