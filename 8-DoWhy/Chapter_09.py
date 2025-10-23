@@ -69,7 +69,7 @@ earnings_data.shape
 earnings_data.head()
 
 # %%
-earnings_data.groupby(['age', 'took_a_course']).mean()
+earnings_groupby = earnings_data.groupby(['age', 'took_a_course']).mean()
 
 # %%
 # Compute naive estimate 
@@ -77,6 +77,16 @@ treatment_avg = earnings_data.query('took_a_course==1')['earnings'].mean()
 cntrl_avg = earnings_data.query('took_a_course==0')['earnings'].mean()
 
 treatment_avg - cntrl_avg
+
+treatment_avg = earnings_data.query('took_a_course==1')['earnings'].mean()
+cntrl_avg = earnings_data.query('took_a_course==0')['earnings'].mean()
+
+mean_earnings = earnings_data.groupby(['age', 'took_a_course'])['earnings'].mean().unstack()
+mean_earnings = mean_earnings.dropna(subset=[True, False])
+mean_earnings['diferencia'] = mean_earnings[True] - mean_earnings[False]
+
+print(mean_earnings[['diferencia']])
+
 
 # %% [markdown]
 # ### Define the graph
@@ -103,6 +113,7 @@ gml_string += ']'
 
 # %%
 # Instantiate the CausalModel 
+# Paso 1 (Estructura causal)
 model = CausalModel(
     data=earnings_data,
     treatment='took_a_course',
@@ -119,6 +130,7 @@ model.view_model()
 
 # %%
 # Get the estimand
+# Paso 2. Estimando (cómo vamos a identificar el efecto causal)
 estimand = model.identify_effect()
 
 print(estimand)
@@ -128,16 +140,19 @@ print(estimand)
 
 # %%
 # Get estimate (Matching)
+# Paso 3: Estimación
 estimate = model.estimate_effect(
     identified_estimand=estimand,
     method_name='backdoor.distance_matching',
     target_units='ate',
     method_params={'distance_metric': 'minkowski', 'p': 2})
 
+
 # %%
 estimate.value
 
 # %%
+# Paso 4: validación,
 refutation = model.refute_estimate(
     estimand=estimand, 
     estimate=estimate,
@@ -148,58 +163,6 @@ print(refutation)
 
 # %% [markdown]
 # ## Inverse Probability Weighting (IPW)
-
-# %%
-pd.read_csv('data/ch_01_drug_data.csv')
-
-gender = [1] * (24 + 56 + 17 + 25) + [0] * (3 + 39 + 6 +74)
-clot = [1] * 24 + [0] * 56 + [1] * 17 + [0] * 25 + [1] * 3 + [0] * 39 + [1] * 6 + [0] * 74
-drug = [0] * (24 + 56) + [1] * (17 + 25) + [0] * 42 + [1] * 80
-
-drug_data = pd.DataFrame(dict(
-    gender=gender,
-    clot=clot,
-    drug=drug
-))
-
-# Construct the graph (the graph is constant for all iterations)
-nodes_drug = ['drug', 'clot', 'gender']
-edges_drug = [
-    ('drug', 'clot'),
-    ('gender', 'drug'),
-    ('gender', 'clot')
-]
-
-# Generate the GML graph
-gml_string_drug = 'graph [directed 1\n'
-
-for node in nodes_drug:
-    gml_string_drug += f'\tnode [id "{node}" label "{node}"]\n'
-
-for edge in edges_drug:
-    gml_string_drug += f'\tedge [source "{edge[0]}" target "{edge[1]}"]\n'
-
-gml_string_drug += ']'
-
-# Instantiate the CausalModel
-model_drug = CausalModel(
-    data=drug_data,
-    treatment='drug',
-    outcome='clot',
-    graph=gml_string_drug
-)
-
-# Identify effect
-estimand_drug = model_drug.identify_effect()
-
-# Get estimate (IPW weighting)
-estimate_drug = model_drug.estimate_effect(
-    identified_estimand=estimand_drug,
-    method_name='backdoor.propensity_score_weighting',
-    target_units='ate'
-)
-
-print(estimate_drug.value)
 
 # %%
 # Get estimate (IPW weighting)
@@ -294,6 +257,7 @@ model.view_model()
 
 # %%
 # Get the estimand
+# Paso 2.
 estimand = model.identify_effect()
 
 print(estimand)
@@ -303,6 +267,7 @@ print(estimand)
 
 # %%
 # Get estimate (S-Learner)
+# Paso 3. Estimación.
 estimate = model.estimate_effect(
     identified_estimand=estimand,
     method_name='backdoor.econml.metalearners.SLearner',
@@ -313,9 +278,11 @@ estimate = model.estimate_effect(
         },
         'fit_params': {}
     })
+)
 
 # %%
-estimate.cate_estimates
+estimate.value == np.array(estimate.cate_estimates).mean()
+
 
 # %% [markdown]
 # ### Refute
@@ -343,7 +310,22 @@ print(refutation)
 
 # %%
 # Compute predictions
-effect_pred = model.causal_estimator.effect(earnings_interaction_test.drop(['true_effect', 'took_a_course'], axis=1))
+
+effect_pred = model.estimate_effect(
+    identified_estimand=estimand,
+    method_name='backdoor.econml.metalearners.SLearner',
+    target_units= earnings_interaction_test.drop(
+        ['true_effect', 'took_a_course'],
+        axis=1
+    ),
+    method_params={
+        'init_params': {
+            'overall_model': LGBMRegressor(n_estimators=500, max_depth=10)
+        },
+        'fit_params': {}
+    }
+).cate_estimates
+
 
 # Get the true effect
 effect_true = earnings_interaction_test['true_effect'].values
