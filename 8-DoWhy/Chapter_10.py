@@ -119,7 +119,7 @@ for node in nodes:
 
 for edge in edges:
     gml_string += f'\tedge [source "{edge[0]}" target "{edge[1]}"]\n'
-    
+
 gml_string += ']'
 
 # %%

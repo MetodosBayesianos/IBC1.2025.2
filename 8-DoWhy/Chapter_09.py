@@ -14,6 +14,13 @@
 
 # %%
 from copy import deepcopy
+import sympy
+## INICIO DESHABILITAR LA IMPRESION INTERACTIVA DE SYMPY
+# Desactivar COMPLETAMENTE el sistema de impresión pretty de sympy
+sympy.interactive.printing._init_python_printing = lambda: None
+import sys
+sys.displayhook = sys.__displayhook__
+## FIN DESHABILITAR LA IMPRESION INTERACTIVA DE SYMPY
 
 import numpy as np
 import pandas as pd
@@ -73,6 +80,11 @@ earnings_groupby = earnings_data.groupby(['age', 'took_a_course']).mean()
 
 # %%
 # Compute naive estimate 
+# column names
+
+earnings_data.columns
+earnings_data.age
+
 treatment_avg = earnings_data.query('took_a_course==1')['earnings'].mean()
 cntrl_avg = earnings_data.query('took_a_course==0')['earnings'].mean()
 
