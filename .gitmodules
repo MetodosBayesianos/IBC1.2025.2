@@ -62,5 +62,5 @@
 	path = estudiantes/22-leancitop
 	url = git@github.com:leancitop/IBC1.2025.2.git
 [submodule "8-DoWhy/Causal-Inference-and-Discovery-in-Python"]
-	path = 8-DoWhy/Causal-Inference-and-Discovery-in-Python
+	path = 8-causalML/Causal-Inference-and-Discovery-in-Python
 	url = https://github.com/PacktPublishing/Causal-Inference-and-Discovery-in-Python
